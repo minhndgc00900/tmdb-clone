@@ -21,7 +21,6 @@ const Details = () => {
   const { movieDetail } = useSelector<RootState, MoviesState>(
     (state) => state?.movies
   );
-  console.log(222, movieDetail);
 
   useEffect(() => {
     initFetch();

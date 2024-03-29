@@ -96,9 +96,7 @@ const MovieSlice = createSlice({
       }),
       builder.addCase(retrieveMovieDetail.fulfilled, (state, action) => {
         state.movieDetail = { ...action.payload };
-      }),
-      builder.addCase(searchMovies.fulfilled, (state, action) => {
-        state.searchResult = action.payload;
+        state.error = null; // Clear error on successful fetch
       });
   },
 });

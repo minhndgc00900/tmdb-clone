@@ -27,9 +27,10 @@ axiosInstance.interceptors.response.use(
     // Handle successful responses
     return response.data;
   },
-  (error) => {
+  (error: ErrorResponse) => {
     // Handle error responses
-    const errorMessage = error.response?.data.message || 'An error occurred';
+    const errorMessage =
+      error.response?.data.status_message || 'An error occurred';
     showToast({
       message: errorMessage,
       type: 'error',
@@ -58,15 +59,7 @@ export async function makeApiRequest<T>(
     .then((resp) => {
       return resp;
     })
-    .catch(async (error: ErrorResponse) => {
-      switch (error.response?.status) {
-        case 400: // Wrong url or params
-          break;
-        case 500: // Server error
-          break;
-        default:
-          throw error.response.data;
-      }
-      throw error.response.data;
+    .catch((error) => {
+      return Promise.reject(error);
     });
 }

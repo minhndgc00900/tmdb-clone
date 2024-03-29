@@ -21,8 +21,6 @@ const InfiniteScroll = <T,>({
   const sentinelRef = useRef<HTMLDivElement>(null);
   const errorMsg = useSelector((state: RootState) => state.movies.error);
 
-  console.log(123123, errorMsg);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
