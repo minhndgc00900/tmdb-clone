@@ -36,17 +36,35 @@ const Card = (props: ICard) => {
   };
 
   return (
-    <div className={styles['card-item']} onClick={() => onDetail()}>
-      <img
-        src={`${process.env.REACT_APP_PUBLIC_PATH}/${movie.poster_path}`}
-        alt={movie.title}
-        style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.5s' }}
-        loading="lazy"
-        onLoad={handleImageLoad}
-        className={styles['main-image']}
-      />
+    <div
+      className={styles['card-item']}
+      onClick={() => onDetail()}
+      style={{
+        flexDirection: showListview ? 'initial' : 'column',
+      }}
+    >
+      <div>
+        <img
+          src={`${process.env.REACT_APP_PUBLIC_PATH}/${movie.poster_path}`}
+          alt={movie.title}
+          style={{
+            opacity: loaded ? 1 : 0,
+            transition: 'opacity 0.5s',
+            width: showListview ? '10rem' : '100%',
+          }}
+          loading="lazy"
+          onLoad={handleImageLoad}
+          className={styles['main-image']}
+        />
+      </div>
       <div className={styles['title-container']}>
-        <div className={styles['title']} title={`${movie.title}`}>
+        <div
+          className={styles['title']}
+          title={`${movie.title}`}
+          style={{
+            textAlign: showListview ? 'start' : 'center',
+          }}
+        >
           {movie.title}
         </div>
         {showDesc && movie.overview && (

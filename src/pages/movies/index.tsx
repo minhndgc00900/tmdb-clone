@@ -79,9 +79,9 @@ function MoviesPage() {
         }}
         hasMore={movies.length < 250}
         loading={
-          <div className={styles.list}>
+          <div className={showListview ? styles.listView : styles.list}>
             {Array.from(Array(columnCount).keys()).map((i) => (
-              <CardSkeleton key={i} />
+              <CardSkeleton key={i} showListview={showListview} />
             ))}
           </div>
         }
@@ -90,7 +90,12 @@ function MoviesPage() {
           {movies &&
             movies.length !== 0 &&
             movies.map((item: Movie) => (
-              <Card movie={item} key={item.id} showDesc showListview />
+              <Card
+                movie={item}
+                key={item.id}
+                showDesc
+                showListview={showListview}
+              />
             ))}
         </div>
       </InfiniteScroll>

@@ -1,9 +1,18 @@
 import Skeleton from 'components/Skeleton';
 import styles from './styles.module.scss';
 
-const CardSkeleton = () => {
+interface CardSkeletonI {
+  showListview?: boolean;
+}
+
+const CardSkeleton = ({ showListview = false }: CardSkeletonI) => {
   return (
-    <div className={styles['card-skeleton']}>
+    <div
+      className={styles['card-skeleton']}
+      style={{
+        flexDirection: showListview ? 'row' : 'column',
+      }}
+    >
       <Skeleton
         image={{
           width: '100%',
