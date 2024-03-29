@@ -7,6 +7,7 @@
 This project is updated with:
 
 - [React 18x](https://reactjs.org)
+- TypeScript
 - Redux
 - SCSS
 - Eslint
