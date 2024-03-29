@@ -37,6 +37,7 @@ The following **additional** features are implemented:
 - [x] Infinite Scroll
 - [x] Debounce Search
 - [x] Breadcrumbs on Movie Detail page
+- [x] commitlint for the project
 
 ## Video Walkthrough
 
