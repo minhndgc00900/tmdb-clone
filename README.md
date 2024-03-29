@@ -46,10 +46,8 @@ The following **additional** features are implemented:
 
 1. Check if your [Node.js](https://nodejs.org/) version is >= 20.10.0
 2. Clone this repository.
-3. Change the package's `name`, `description`, and `repository` fields in `package.json`.
-4. Change the name of your app on `public/manifest.json`.
-5. Create an env setting `cp .env-example .env`.
-6. You can use `npm` or `yarn` for package manager, eg:
+3. Create an env setting `cp .env-example .env`.
+4. You can use `npm` or `yarn` for package manager, eg:
 
 - NPM
   - Run `npm install` to install the dependencies.
