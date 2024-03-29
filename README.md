@@ -7,6 +7,7 @@
 This project is updated with:
 
 - [React 18x](https://reactjs.org)
+- TypeScript
 - Redux
 - SCSS
 - Eslint
@@ -37,6 +38,7 @@ The following **additional** features are implemented:
 - [x] Infinite Scroll
 - [x] Debounce Search
 - [x] Breadcrumbs on Movie Detail page
+- [x] commitlint for the project
 
 ## Video Walkthrough
 
