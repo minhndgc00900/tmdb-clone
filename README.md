@@ -7,14 +7,48 @@ Imdb Clone Web
 This project is updated with:
 
 - [React 18x](https://reactjs.org)
-- React Query
 - Redux
-- Styled-component
+- SCSS
 - Eslint
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can view a list of movies currently playing in theaters. Poster images load asynchronously.
+- [x] Add a tab bar for **Now Playing** and **Top Rated** movies.
+- [x] Add a search bar.
+- [x] User can view movie details by tapping on a cell.
+- [x] User sees loading state while waiting for the API.
+- [x] User sees an error message when there is a network error.
+- [x] Simple responsive.
+
+The following **optional** features are implemented:
+
+- [ ] Implement segmented control to switch between list view and grid view.
+- [x] All images fade in.
+- [x] Implement lazy load image.
+- [x] Customize the highlight and selection effect of the cell.
+- [x] Improve UX loading by skeleton loading.
+- [x] Enhance responsive.
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you can get done to improve the app functionality!
+
+## Requirements
+
+- Please use ReactJS with typescript
+- Please use SCSS
+- Please do not use any CSS/SCSS framework or UI library
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
 
 ## 🧐 Getting Started
 
-1. Check if your [Node.js](https://nodejs.org/) version is >= 12.
+1. Check if your [Node.js](https://nodejs.org/) version is >= 20.10.0
 2. Clone this repository.
 3. Change the package's `name`, `description`, and `repository` fields in `package.json`.
 4. Change the name of your app on `public/manifest.json`.
