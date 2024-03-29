@@ -1,6 +1,6 @@
 # 👨🏽‍💻 Tmdb Clone Web
 
-Tmdb Clone Web
+**Movies** is a movies app using the [The Movie Database API](https://developers.themoviedb.org/3).
 
 ## 📌 Features
 
@@ -34,11 +34,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Infinite Scroll
+- [x] Debounce Search
+- [x] Breadcrumbs on Movie Detail page
 
 ## Video Walkthrough
 
-coming soon!
+- https://drive.google.com/file/d/14CLrPsUItJGxH_rKt2T_d8kT2n4VE6v_/view
 
 ## 🧐 Getting Started
 
