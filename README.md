@@ -25,7 +25,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Implement segmented control to switch between list view and grid view.
+- [x] Implement segmented control to switch between list view and grid view.
 - [x] All images fade in.
 - [x] Implement lazy load image.
 - [x] Customize the highlight and selection effect of the cell.
