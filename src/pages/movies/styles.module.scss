@@ -1,0 +1,26 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+
+  @media only screen and (min-width: 420px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media only screen and (min-width: 1366px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.listView {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.title__screen {
+  @media only screen and (max-width: 420px) {
+    font-size: 1.4rem;
+  }
+}

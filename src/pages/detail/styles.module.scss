@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  & .image__container {
+    width: 35%;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  & .title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  & .main__title {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  & .genre {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+  }
+
+  & .genre__list {
+    color: rgb(121, 121, 121);
+  }
+
+  & .year {
+    display: flex;
+    gap: 8px;
+  }
+
+  & .plot {
+    font-weight: 500;
+  }
+
+  & .detail__image {
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+  }
+}

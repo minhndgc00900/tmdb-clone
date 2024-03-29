@@ -1,0 +1,84 @@
+.header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: rgba(121, 121, 121, 255);
+  border-bottom: solid 1px #e7e8ea;
+  margin: auto;
+  z-index: 4;
+
+  @media only screen and (min-width: 1366px) {
+    padding: 20px 0;
+  }
+}
+
+.header__content {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 1366px) {
+    width: 80rem;
+  }
+}
+
+.logo {
+  padding: 10px 0;
+}
+
+.empty {
+  width: 20%;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    width: 20rem;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  display: block;
+  padding: 10px;
+  color: rgba(121, 121, 121, 255);
+
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    background-color: #555;
+  }
+}
+
+.content {
+  padding: 1rem;
+  padding-top: 9rem;
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+  font-family: 'Roboto', sans-serif !important;
+  margin: auto;
+
+  @media only screen and (min-width: 1366px) {
+    width: 80rem;
+  }
+}

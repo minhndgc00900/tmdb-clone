@@ -1,0 +1,45 @@
+.bg-skeleton {
+  background: linear-gradient(90deg,#f3f4f6 25%,rgba(0,0,0,0.15) 37%,#f3f4f6 63%);
+  background-size: 400% 100%;
+}
+
+.animate-skeleton {
+  animation: skeleton 1.4s ease infinite;
+}
+
+.line-skeleton {
+  height: 24px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.paragraph-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.image-skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 4px;
+}
+
+.image-icon {
+  color: #d1d5db;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes skeleton {
+  from {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 50%
+  }
+
+}
