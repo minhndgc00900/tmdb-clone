@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAppDispatch, useAppSelector } from 'shared/hooks/store';
 import { searchMovies } from 'slices/movies';
 import styles from './styles.module.scss';
-import { useNavigate } from 'react-router';
 
 const SearchInput: React.FC = () => {
   const [query, setQuery] = useState<string>('');
@@ -16,14 +15,13 @@ const SearchInput: React.FC = () => {
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [debouncedQuery, setDebouncedQuery] = useState<string>('');
   const { searchResult = [] } = useAppSelector((state) => state.movies);
-  const navigate = useNavigate();
 
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     const timerId = setTimeout(() => {
       setDebouncedQuery(query);
-    }, 500); // Adjust debounce delay as needed
+    }, 500); //
 
     return () => {
       clearTimeout(timerId);
