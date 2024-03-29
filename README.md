@@ -1,6 +1,6 @@
-# 👨🏽‍💻 Imdb Clone Web
+# 👨🏽‍💻 Tmdb Clone Web
 
-Imdb Clone Web
+Tmdb Clone Web
 
 ## 📌 Features
 
